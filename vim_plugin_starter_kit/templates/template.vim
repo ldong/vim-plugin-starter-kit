@@ -9,14 +9,14 @@ python sys.path.append(vim.eval('expand("<sfile>:h")'))
 "  Function(s)
 " --------------------------------
 function! TemplateExample()
-python << endOfPython
+python << endPython
 
 from template import template_example
 
 for n in range(5):
     print(template_example())
 
-endOfPython
+endPython
 endfunction
 
 " --------------------------------
